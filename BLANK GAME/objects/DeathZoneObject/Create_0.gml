@@ -1,0 +1,1 @@
+ targetdeath = room;

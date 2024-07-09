@@ -1,0 +1,1 @@
+Como usar: importar "BLANK GAME" dentro do Game Maker Studio 2
