@@ -1,0 +1,1 @@
+text = "Pressione [Espaco] ou [W] para pular!"

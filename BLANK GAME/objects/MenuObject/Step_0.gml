@@ -22,10 +22,10 @@ if(keyboard_check_pressed(vk_enter)) {
 
 if(menu_y < gui_height+300) && (menu_comitted != -1) { 
 	switch(menu_comitted) {
-		case 3: default: slide_transition(TRANS_MODE.GOTO, Room1);audio_stop_sound(BGM_Menu); audio_play_sound(BGM_Game, 0, true); break;
-		case 2: {
+		case 2: default: slide_transition(TRANS_MODE.GOTO, Room1_1);audio_stop_sound(BGM_Menu); audio_play_sound(BGM_Game, 0, true); break;
+		case 1: {
 			if(!file_exists(SAVEFILE)) {
-				slide_transition(TRANS_MODE.GOTO, Room1);
+				slide_transition(TRANS_MODE.GOTO, Room1_1);
 				audio_stop_sound(BGM_Menu);
 				audio_play_sound(BGM_Game, 0, true);
 			}

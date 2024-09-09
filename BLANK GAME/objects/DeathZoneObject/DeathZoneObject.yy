@@ -35,5 +35,5 @@
     "path":"sprites/WallTile/WallTile.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }

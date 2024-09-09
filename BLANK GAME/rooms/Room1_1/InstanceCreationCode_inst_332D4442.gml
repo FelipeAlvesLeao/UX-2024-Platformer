@@ -1,0 +1,1 @@
+text = "Pressione [WASD] ou [Setas Do Teclado] para se mover!

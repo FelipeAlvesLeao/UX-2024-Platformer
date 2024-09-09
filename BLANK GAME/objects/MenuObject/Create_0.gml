@@ -12,11 +12,10 @@ menu_itemheight = font_get_size(Font2);
 menu_comitted = -1;
 menu_control = true;
 audio_play_sound(BGM_Menu, 0, true);
-menu[3] = "Jogar";
-menu[2] = "Continuar";
-menu[1] = "Creditos";
+menu[2] = "Jogar";
+menu[1] = "Continuar";
 menu[0] = "Fechar";
 menu_items = array_length(menu);
-menu_cursor = 3;
+menu_cursor = 2;
 
 #macro SAVEFILE "SaveDoJogo.sav"

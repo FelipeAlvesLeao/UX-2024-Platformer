@@ -2,7 +2,7 @@
 if(hascontrol) {
 var key_left = keyboard_check(vk_left) or keyboard_check(ord("A"));
 var key_right = keyboard_check(vk_right) or keyboard_check(ord("D"));
-var key_jump = keyboard_check_pressed(vk_space) or keyboard_check_pressed(ord("W"));}
+var key_jump = keyboard_check_pressed(vk_space) or keyboard_check_pressed(ord("W")) or keyboard_check_pressed(vk_up);}
 else {
 	key_right = 0;
 	key_left = 0;
@@ -16,12 +16,7 @@ v_spd = v_spd + grv;
 if(place_meeting(x, y+1, WallObject) and (key_jump)) {
 	v_spd = jump_spd;
 }
-//if(place_meeting(x+h_spd, y, WallObject) and key_jump) 
-//{
-//	direction = 180;
-//	v_spd = jump_spd;
-//	h_spd = -walk_spd * move * 10;
-//	}
+
 //collision logic
 if(place_meeting(x+h_spd, y, WallObject)){ 
 	while(!place_meeting(x+sign(h_spd),y, WallObject)) {
@@ -40,3 +35,8 @@ if(place_meeting(x, y+v_spd, WallObject)){
 	}	
 	
 y = y + v_spd;
+
+
+if( h_spd != 0){
+    image_xscale = sign(h_spd);
+}

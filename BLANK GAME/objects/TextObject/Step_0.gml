@@ -7,6 +7,5 @@ w = string_width(text_current);
 
 //destroy when done
 if(letters > length) && (keyboard_check_pressed(vk_anykey)) {
-	instance_destroy();
 	with(CameraObject) follow = PlayerObject;
 }
